@@ -1,38 +1,357 @@
+body {
+  background-color: #000000;
+}
+
 .App {
   text-align: center;
+  background-color: #000000;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.custom-navbar {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.custom-brand {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 32px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.custom-toggle {
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.custom-nav {
+  margin-top: 20px;
+}
+
+.custom-link {
+  color: #ffffff;
+  margin-right: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.custom-link:hover,
+.custom-link.active {
+  color: #ffcc00;
+}
+
+.newsletter-text {
+  background-color: #e9e8e8;
+  padding: 30px;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(126, 63, 63, 0.1);
+  font-size: 20px;
+  line-height: 1.5;
+  color: #000000;
+}
+.Signup,
+.Signin,
+.newsletter,
+.about,
+.newsletter-info-card {
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+  display: inline-block;
+  max-width: 400px;
+  width: 100%;
+}
+
+.Signup h2,
+.Signin h2,
+.about-title,
+.newsletter-brand {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.Signup-form .form-group label,
+.Signin-form .form-group label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #000000;
+}
+
+.Signup-form input,
+.Signin-form input {
+  width: 100%;
+  padding: 7px;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+
+
+
+.Signup-form .btn,
+.Signin-form .btn,
+.newsletter-info-subscribe-button {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px;
+  background-color: #000000;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+.Signup-form .btn:hover,
+.Signin-form .btn:hover,
+.newsletter-info-subscribe-button:hover {
+  background-color: #000033;
+}
+
+.Signup p,
+.Signin p {
+  font-size: 16px;
+  color: #666666;
+}
+
+.Signup p::before,
+.Signin p::before {
+  content: "✉️ ";
+}
+
+.Signup p a,
+.Signin p a {
+  color: #666666;
+  border: 2px solid black;
+  padding: 4px 8px;
+}
+
+.Signup p a:hover,
+.Signin p a:hover {
+  color: #000000;
+}
+
+
+.about {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #000000;
+}
+
+
+.about-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.about-description {
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.about-features {
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.feature-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.about-testimonial {
+  font-size: 20px;
+  color: #000000;
+}
+
+.testimonial-quote {
+  margin-top: 20px;
+  font-style: italic;
+}
+
+.testimonial-quote cite {
+  display: block;
+  margin-top: 10px;
+  font-style: normal;
+  font-size: 16px;
+  color: #999999;
+}
+
+.newsletter-info-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
+  background-color: #000000;
 }
 
-.App-link {
-  color: #61dafb;
+.newsletter-info-card {
+  width: 400px;
+  padding: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #000000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.newsletter-info-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.newsletter-info-content {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.newsletter-info-date,
+.newsletter-info-author {
+  font-size: 18px;
+  color: #777777;
+  margin-bottom: 10px;
+}
+
+.newsletter-info-subscribe-button {
+  width: 100%;
+  margin-top: 20px;
+  display: block;
+  padding: 16px;
+  background-color: #000000;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.newsletter-info-subscribe-button:hover {
+  background-color: #000033;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    opacity: 1;
+  }
+}
+
+.container {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Emphasis on navbar */
+.custom-navbar {
+  filter: grayscale(100%);
+}
+
+.custom-brand,
+.custom-toggle,
+.custom-link {
+  transition: filter 0.3s ease-in-out;
+}
+
+.custom-link:hover,
+.custom-link.active {
+  filter: grayscale(0%);
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .Signup,
+  .Signin,
+  .newsletter,
+  .about,
+  .newsletter-info-card {
+    padding: 20px;
+  }
+
+  .Signup h2,
+  .Signin h2,
+  .about-title,
+  .newsletter-brand {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .Signup-form .form-group label,
+  .Signin-form .form-group label {
+    font-size: 16
+    px;
+    margin-bottom: 8px;
+  }
+
+  .Signup-form input,
+  .Signin-form input {
+    font-size: 14px;
+  }
+
+  .Signup-form .btn,
+  .Signin-form .btn,
+  .newsletter-info-subscribe-button {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .Signup p,
+  .Signin p {
+    font-size: 14px;
+  }
+
+  .about-title {
+    font-size: 24px;
+  }
+
+  .about-description,
+  .about-features,
+  .about-testimonial {
+    font-size: 16px;
+  }
+
+  .testimonial-quote {
+    font-size: 14px;
+  }
+
+  .testimonial-quote cite {
+    font-size: 12px;
+  }
+
+  .newsletter-info-title {
+    font-size: 24px;
+  }
+
+  .newsletter-info-content {
+    font-size: 16px;
+  }
+
+  .newsletter-info-date,
+  .newsletter-info-author {
+    font-size: 14px;
   }
 }

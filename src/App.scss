@@ -1,0 +1,170 @@
+.page-container {
+  background-color: #000000;
+  padding: 20px;
+  border-color:black;
+}
+
+.Appp {
+  display: flex;
+  justify-content: center;
+}
+
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-color:black;
+}
+
+.main-content {
+  text-align: center;
+  border-color:black;
+}
+
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-color:black;
+}
+
+.product-card {
+  width: 100%;
+  max-width: 300px;
+  margin: 10px;
+  border-color:black;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.HomeScreen {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-color:black;
+}
+
+.card {
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 5px;
+  border-color:black;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color:black;
+}
+
+.author-info {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.author-name {
+  font-weight: bold;
+}
+
+.author-about {
+  color: #8a8a8a;
+}
+
+.author-description {
+  color: #ff4d4d;
+}
+
+.bottom-bar {
+  background-color: #ffffff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px 0;
+
+  h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+
+  .contact-info {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      margin-bottom: 10px;
+
+      i {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .social-icons {
+    list-style: none;
+    padding-left: 0;
+
+    .list-inline-item {
+      display: inline-block;
+      margin-right: 10px;
+
+      a {
+        color: #ffffff;
+
+        &:hover {
+          color: #cccccc;
+        }
+      }
+    }
+  }
+}
+
+/* Button Animation */
+@keyframes buttonAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  animation: buttonAnimation 1s infinite;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #333333;
+}
+
+.card{
+  border-color:black;
+}
